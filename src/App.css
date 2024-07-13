@@ -1,38 +1,305 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f4f4ff;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  width: 464px;
+  padding: 15px;
+  background-color: #fff;
+  margin: 15px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.logo {
+  width: 123.51px;
+  height: 36.65px;
+  /* position: absolute; */
+  margin-top: 36px;
+}
+
+.slogn-line {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32.74px;
+  text-align: center;
+  color: #4d4d4d;
+  /* position: absolute; */
+  margin-top: 36px;
+}
+
+.price-box {
+  /* margin-top: 36px; */
+  width: 429px;
+  padding: 11px;
+  /* border-radius: 10px 10px 0px 0px; */
+  border: 2px solid #e5e5e5;
+  position: relative;
+}
+
+.price-box-badge {
+  height: 27px;
+  border-radius: 100px;
+  opacity: 0px;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -13px;
+}
+
+.price-box-badge-text {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  color: #4d4d4d;
+}
+
+.price-multiply {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32.74px;
+  text-align: left;
+  color: #4d4d4d;
+}
+
+.price-rest {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32.74px;
+  text-align: left;
+  color: #4d4d4d;
+}
+
+.price-green-words {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #03d69d;
+}
+
+.price-green-words-bold {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: left;
+  color: #03d69d;
+}
+
+.price-not-promoting {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.82px;
+  text-align: left;
+  color: #afafaf;
+}
+
+.price-slab-marketing-box {
+  width: 380px;
+  height: 33px;
+  top: 259px;
+  left: 36px;
+  gap: 0px;
+  opacity: 0px;
+  background: #133a6f;
+  border-radius: 2px;
+}
+
+.price-slab-marketing-box-text-span {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.price-slab-marketing-box-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.price-slab-marketing-box-text-flag {
+  background: #fff;
+  width: 27px;
+  transform: rotate(39deg);
+  right: 15px;
+  position: relative;
+  border-radius: 2px;
+  height: 27px;
+  top: 3px;
+}
+
+.trust-line {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b2b2b2;
+}
+
+.logo-two {
+  width: 57.52px;
+  height: 17.07px;
+  top: 1008px;
+  left: 309px;
+  padding: 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.check-box {
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.check-box:checked {
+  background-color: #03d69d;
+  position: relative;
+}
+
+.check-box:checked::after {
+  content: "\2714";
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qr {
+  width: 332px;
+  height: 332px;
+  margin-top: 36px;
+}
+
+.primary-button {
+  width: 310px;
+  height: 39px;
+  top: 608px;
+  left: 74px;
+  gap: 0px;
+  border-radius: 8px;
+  opacity: 0px;
+  background-color: #133a6f;
+}
+
+.but-text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.55px;
+  text-align: left;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.copy {
+  width: 19px;
+  height: 22px;
+  top: 578px;
+  left: 339px;
+  gap: 0px;
+  opacity: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.second-heading {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21.82px;
+  text-align: center;
+  color: #4d4d4d;
+}
+
+.check-box-two {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.check-box-two:checked {
+  background-color: #03d69d;
+  position: relative;
+}
+
+.check-box-two:checked::after {
+  content: "\2714";
+  font-size: 8px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pip {
+  height: 4px;
+  top: -6px;
+  position: relative;
+  color: #e5e5e5;
+}
+
+hr {
+  width: 427px;
+  height: 0px;
+  top: 778px;
+  left: 18px;
+  gap: 0px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  border: 2px solid #e5e5e5;
+}
+
+.identerifier {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 19.1px;
+  text-align: center;
+  color: #4d4d4d;
+}
+
+.text-filed-name {
+  width: 424px;
+  height: 65px;
+  border-radius: 8px 0px 0px 0px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  border: 2px solid #e5e5e5;
+}
+
+.text-filed-cvv {
+  width: 200px;
+  height: 65px;
+  border-radius: 8px 0px 0px 0px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  border: 2px solid #e5e5e5;
+  margin-right: 10px;
 }

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import FirstPage from "./components/FirstPage";
+import SecondePage from "./components/SecondePage";
+import ThirdPage from "./components/ThirdPage";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState(1);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="app-wrapper">
+        <div className="card">
+          <img src={require("./images/Logo.png")} alt="logo" className="logo" />
+          {currentPage == 1 && <FirstPage />}
+          {currentPage == 2 && <SecondePage />}
+          {currentPage == 3 && <ThirdPage />}
+        </div>
+      </div>
     </div>
   );
 }
