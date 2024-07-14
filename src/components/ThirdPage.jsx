@@ -7,7 +7,7 @@ function ThirdPage() {
     <>
       <div className="slogn-line">João, pague o restante em 1x no cartão</div>
 
-      <div>
+      <div className="w-100">
         <TextField
           className="text-filed-name my-2"
           label="Nome completo"
@@ -31,7 +31,7 @@ function ThirdPage() {
         />
         <div
           className="d-flex justify-content-between align-items-center"
-          style={{ width: "424px" }}
+          style={{ maxWidth: "424px" }}
         >
           <TextField
             className="text-filed-cvv"
@@ -77,12 +77,12 @@ function ThirdPage() {
       </div>
 
       <div
-        className="d-flex align-items-center"
+        className="d-flex align-items-center me-1 w-100"
         style={{
           marginTop: "20px",
         }}
       >
-        <div className="d-flex flex-column align-items-center">
+        <div className="d-flex flex-column align-items-center me-1">
           <input type="checkbox" className="check-box-two" checked />
           <span className="pip">|</span>
           <span className="pip">|</span>
@@ -97,20 +97,20 @@ function ThirdPage() {
             }}
           />
         </div>
-        <div>
+        <div className="w-100">
           <div
-            className="d-flex justify-content-between align-items-center"
+            className="d-flex justify-content-between align-items-center w-100"
             style={{
-              width: "360px",
+              maxWidth: "360px",
             }}
           >
             <div>1ª entrada no Pix</div>
             <div className="second-heading">R$ 15.300,00</div>
           </div>
           <div
-            className="d-flex justify-content-between align-items-center"
+            className="d-flex justify-content-between align-items-center w-100"
             style={{
-              width: "360px",
+              maxWidth: "360px",
             }}
           >
             <div>2ª no cartão</div>
@@ -120,9 +120,9 @@ function ThirdPage() {
       </div>
       <hr />
       <div
-        className="d-flex justify-content-between align-items-center"
+        className="d-flex justify-content-between align-items-center w-100"
         style={{
-          width: "360px",
+          maxWidth: "360px",
         }}
       >
         <div>CET: 0,5%</div>
@@ -130,9 +130,9 @@ function ThirdPage() {
       </div>
       <hr />
       <div
-        className="d-flex justify-content-between align-items-center"
+        className="d-flex justify-content-between align-items-center w-100"
         style={{
-          width: "360px",
+          maxWidth: "360px",
         }}
       >
         <div className="second-heading">Como funciona?</div>

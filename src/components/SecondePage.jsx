@@ -27,12 +27,12 @@ function SecondePage() {
       </div>
 
       <div
-        className="d-flex align-items-center"
+        className="d-flex align-items-center w-100"
         style={{
           marginTop: "20px",
         }}
       >
-        <div className="d-flex flex-column align-items-center">
+        <div className="d-flex flex-column align-items-center me-1">
           <input type="checkbox" className="check-box-two" style={{
             borderColor:'#03d69d'
           }} />
@@ -48,11 +48,12 @@ function SecondePage() {
             }}
           />
         </div>
-        <div>
+        <div className="w-100">
           <div
             className="d-flex justify-content-between align-items-center"
             style={{
-              width: "360px",
+              maxWidth: "360px",
+              width:"100%"
             }}
           >
             <div>1ª entrada no Pix</div>
@@ -61,7 +62,8 @@ function SecondePage() {
           <div
             className="d-flex justify-content-between align-items-center"
             style={{
-              width: "360px",
+              maxWidth: "360px",
+              width:"100%"
             }}
           >
             <div>2ª no cartão</div>
@@ -71,9 +73,9 @@ function SecondePage() {
       </div>
       <hr />
       <div
-        className="d-flex justify-content-between align-items-center"
+        className="d-flex justify-content-between align-items-center w-100"
         style={{
-          width: "360px",
+          maxWidth: "360px",
         }}
       >
         <div>CET: 0,5%</div>
@@ -81,9 +83,9 @@ function SecondePage() {
       </div>
       <hr />
       <div
-        className="d-flex justify-content-between align-items-center"
+        className="d-flex justify-content-between align-items-center w-100"
         style={{
-          width: "360px",
+          maxWidth: "360px",
         }}
       >
         <div className="second-heading">Como funciona?</div>
