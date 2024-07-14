@@ -124,7 +124,35 @@ body {
   background: #133a6f;
   border-radius: 2px;
 }
+/* 
+.price-slab-marketing-box-text-span {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  color: #ffffff;
+}
 
+.price-slab-marketing-box-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.price-slab-marketing-box-text-flag {
+  background: #fff;
+  width: 27px;
+  transform: rotate(39deg);
+  right: 15px;
+  position: relative;
+  border-radius: 2px;
+  height: 27px;
+  top: 3px;
+} */
+
+/* Base styles */
 .price-slab-marketing-box-text-span {
   font-size: 16px;
   font-weight: 800;
@@ -151,6 +179,38 @@ body {
   height: 27px;
   top: 3px;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .price-slab-marketing-box-text-span,
+  .price-slab-marketing-box-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .price-slab-marketing-box-text-flag {
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-slab-marketing-box-text-span,
+  .price-slab-marketing-box-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .price-slab-marketing-box-text-flag {
+    width: 29px;
+    height: 23px;
+    right: 10px;
+    top: 5px;
+  }
+}
+
 
 .trust-line {
   font-size: 14px;
